@@ -1,20 +1,25 @@
 @font-face {
     font-family:'Roboto-Regular';
-    src: url(font/Roboto-Regular.ttf) format('ttf'),
+    src:url(font/Roboto-Regular.woff) format('woff'),
+         url(font/Roboto-Regular.woff2) format('woff2');
+          
        
  }
 
 @font-face {
     font-family:'Inter-Regular';
-    src: url(font/Inter-Regular.ttf) format('ttf'),
-   
+    src:url(font/Inter-Regular.woff) format('woff'),
+         url(font/Inter-Regular.woff2) format('woff2');
+         
+         
+        
 }        
    
 body {
     margin: 0;
     padding: 0;
     color: #fff;
-    font-family:'Inter-Regular', sans-serif;
+    font-family:'Inter-Regular';
     font-size: 14px;
     line-height: 24px;
     background-color: #202020;
@@ -25,8 +30,20 @@ main {
     margin-right:auto;
 
 }
+.titre1{
+    font-family:'Inter-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  
+   
+
+}
 /* définition de la grid  */
-header {
+#nivo1_header {
     display:grid;
     grid-template-columns:200px 220px 300px 4fr ;
     grid-template-rows:50px;
@@ -188,6 +205,62 @@ a {
     top:26px;
     left:0px;
 }
+.trait2 {
+    position: relative;
+}
+.trait2::after {
+    content:"";
+    display:block;
+    position: absolute;
+    height: 0;
+    width: 73px;
+    border-top: 0.24rem solid #F87F28 ;
+    top:60px;
+    left:90px;
+}
+.trait3 {
+    position: relative;
+}
+.trait3::after {
+    content:"";
+    display:block;
+    position: absolute;
+    height: 0;
+    width: 73px;
+    border-top: 3.84px solid #F87F28 ;
+    top:70px;
+    left:0px;
+}
+.trait4 {
+    position: relative;
+}
+
+.trait4:after {
+    content:"";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 40px;
+    border-top: 3.84px solid #F87F28;
+    top: -18px;
+    left: 0;
+}
+.traitgris{
+    position:relative;
+}
+/* definition des lignes grises sur section 4 */
+
+.traitgris::after {
+    content:"";
+    display:block;
+    position:absolute;
+    height:0;
+    width: 733px;
+    border-top: 0.5px solid #ADB5BD29 ;
+    top:120px;
+    left:0;
+}
+
 /* definition grid et contenu texte */
 #textsection_1 {
     display:grid;
@@ -235,7 +308,7 @@ h1 {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
-    padding-right:288px ;
+    padding-right:280px ;
 
 }
 #fonction { 
@@ -268,6 +341,641 @@ h1 {
     background-color: #202020;
     color:#F87F28 ;
 }
+.butt2{
+    background: #F87F28;
+    margin: 1.125rem 0;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 4px 12px 8px 12px;
+    border: none;
+    margin-left: auto;
+    margin-right: 20px;
+   
+}
+
+/* Section niveau2 partie header compétences */
+/* image background section2 */
 
 
+#nivo_2 {
+    text-align: center;
+    background: url(images/service.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+#nivo2_header .titre1 {
+    padding-top: 155px;
+    text-align: center;
+}
+
+.titre1 {
+    margin-top: 0;
+   
+    margin-bottom: 2.8125rem;
+
+}
+#nivo_2text {
+     margin: 0 47.5rem; 
+     
+
+}
+/* section du niveau 2 partie section interne grid */
+#nivo_2-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3.125rem 3.9375rem 5rem;
+    padding: 7.25rem 8.75rem 11.875rem 25.1875rem;
+
+}
+#nivo_2-section p, #nivo_2-section h2 {
+    text-align: left;
+    margin-right: 6.5625rem;
+
+}
+#nivo_2-fond1, #nivo_2-fond2, #nivo_2-fond3, #nivo_2-fond4 {
+    background-color: #fff;
+    width: 3.25rem;
+    height: 3.25rem;
+    border-radius: 1.125rem;
+}
+
+/* #nivo_2-icon1,#nivo_2-fond1{
+    grid-column: 1;
+    grid-row: 1;
+} */
+
+#nivo_2-t1 {
+    grid-column: 1;
+    grid-row: 2;
+    
+}
+#nivo_2-tt1 {
+    grid-column: 1;
+    grid-row: 3;
+}
+#nivo_2-t2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+#nivo_2-tt2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+#nivo_2-t3 {
+    grid-column:3;
+    grid-row: 2;
+}
+#nivo_2-tt3 {
+    grid-column: 3;
+    grid-row: 3;
+}
+#nivo_2-t4 {
+    grid-column: 4;
+    grid-row: 2;
+}
+#nivo_2-tt4 {
+    grid-column: 4;
+    grid-row: 3;
+}
+/* paramétrage des icones section2 */
+#nivo_2-icon1,#nivo_2-icon2,#nivo_2-icon3,#nivo_2-icon4 {
+    margin: 1rem;
+    width: 1.3125rem;
+    height: 1.3125rem;
+
+}
+#nivo_2-icon1, #nivo_2-fond1 {
+   grid-column: 1;
+   grid-row: 1;
+
+}
+#nivo_2-icon2, #nivo_2-fond2 {
+   grid-column: 2;
+   grid-row: 1;
+}
+#nivo_2-icon3, #nivo_2-fond3 {
+    grid-column: 3;
+    grid-row: 1;
+   
+}
+#nivo_2-icon4,#nivo_2-fond4 {
+    grid-column: 4;
+    grid-row: 1;
+   
+}
+ 
+ /* section niv 3 portfolio partie header */
+ 
+#nivo_3 {
+    background:url(images/Dark_3.svg),#232323;
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    display: flex;
+    
+}
+#nivo3_header {
+    margin: 6.75rem 4.8125rem 0 23.875rem;
+
+}
+/* affichage des images desktop (desk) */
+.mobile {
+    visibility:hidden;
+}
+/* section du niveau 3 definition grid position images */
+
+#nivo_3-port {
+    display: grid;
+    grid-template-columns: 14rem 6.25rem 6.25rem 14rem;
+    grid-template-rows: 16.625rem 16.625rem 16.625rem;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    margin: 6.9375rem 23.375rem 14.9375rem 0;
+
+}
+#nivo_3-port img {
+    border-radius: 1.25rem;
+
+}
+#nivo_3-img1,#mobil1 {
+    grid-column: 1/4;
+    grid-row: 1;
+
+}
+#nivo_3-img2,#mobil2 {
+    grid-column: 4;
+    grid-row: 1
+
+}
+#nivo_3-img3,#mobil3 {
+    grid-column: 1;
+    grid-row: 2;
+
+}
+#nivo_3-img4,#mobil4 {
+    grid-column: 2/5;
+    grid-row: 2;
+}
+#nivo_3-img5,#mobil5 {
+    grid-column: 1/3;
+    grid-row: 3;
+
+}
+#nivo_3-img6,#mobil6 {
+    grid-column: 3/5;
+    grid-row: 3;
+
+}
+
+/* section niv 4 experiences partie header */
+
+#nivo_4{
+    background-color:#232323;
+}
+/* section niv 4 definition de la grid */
+
+#nivo4-header {
+    display: grid;
+    grid-template-columns: 363px 51px 321px 325px;
+    grid-template-rows: 34px 110px 34px 110px 34px 110px;
+    margin: 0rem 23.75rem 0 24.375rem;
+    padding-bottom: 12.5rem;
+}
+#nivo_4-h1 {
+    margin-top: 0;
+    grid-column: 1;
+    grid-row: 2;
+   
+}
+#nivo_4-tt1 {
+    margin-top: 100px;
+    padding-right: 100px;
+    grid-column: 1;
+    grid-row: 2/5;
+    
+}
+#butt1 {
+    grid-column: 1;
+    grid-row: 5/7;
+    margin-bottom: 100px;
+    margin-right: 172px;
+    margin-left: 0;
+}
+#nivo_4-tt2 {
+    grid-column: 3;
+    grid-row: 1;
+}
+#nivo_4-tt3 {
+    grid-column: 3;
+    grid-row: 2;
+}
+#nivo_4-tt4 {
+    grid-column: 4;
+    grid-row: 1/3;
+}
+#nivo_4-tt5 {
+    grid-column: 3;
+    grid-row: 3;
+}
+#nivo_4-tt6 {
+    grid-column: 3;
+    grid-row: 4;
+}
+#nivo_4-tt7 {
+    grid-column: 4;
+    grid-row: 3/5;
+}
+#nivo_4-tt8 {
+    grid-column: 3;
+    grid-row: 5;
+}
+#nivo_4-tt9 {
+    grid-column: 3;
+    grid-row: 6;
+   
+}
+#nivo_4-tt10 {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+#nivo_4-icon1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+#nivo_4-icon2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+#nivo_4-icon3 {
+    grid-column: 2;
+    grid-row: 5;
+}
+/* section niveau 4 parametrage caractères */
+
+#nivo_4-tt2,#nivo_4-tt5,#nivo_4-tt8 {
+    font-family: 'Roboto-Regular',sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;  
+}
+#nivo_4-tt3,#nivo_4-tt6,#nivo_4-tt9 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+/* section niveau 5 definition de la grid */
+
+#nivo_5 {
+   display: flex;
+   background-color:#232323;
+}
+#nivo_5-bloc {
+    display: grid;
+    grid-template-columns: 14.875rem 4.5625rem 10.6875rem 4.3125rem 2.9375rem 4.6875rem;
+    grid-template-rows: 3.75rem 3.75rem 3.75rem 3.75rem;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    margin: 50px 93px 108px 385px;
+
+}
+
+#nivo_5-boite1 {
+    grid-column: 1/3;
+    grid-row: 1;
+
+}
+#nivo_5-boite2 {
+    grid-column: 3/7;
+    grid-row: 1;
+}
+#nivo_5-boite3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+#nivo_5-boite4 {
+    grid-column: 2/5;
+    grid-row: 2;
+}
+#nivo_5-boite5 {
+    grid-column: 1/3;
+    grid-row: 3;
+    margin-right: 0.75rem;
+}
+#nivo_5-boite6 {
+    grid-column: 3/6;
+    grid-row: 3;
+}
+#nivo_5-boite7 {
+    grid-column: 1/4;
+    grid-row: 4;
+}
+
+#nivo_5-header {
+margin-left: 2px;
+margin-top: 80px;
+}
+#nivo_5-tt2 {
+    Width:327px;
+    Height:96px;
+   
+}
+.nivo_5-tt1 {
+    margin-left: 15px;
+    
+}
+
+#nivo_5-boite1,#nivo_5-boite2,#nivo_5-boite3,#nivo_5-boite4,#nivo_5-boite5,#nivo_5-boite6,#nivo_5-boite7 {
+    
+background-color: #2C2C2C;
+border-radius: 10px;
+box-shadow: 0px 0px 29px #4458901f;
+display: flex;
+flex-direction: row;
+padding-left:20px;
+align-items: center;
+}
+
+/* niveau 6 témoignages */
+/* header */
+
+#nivo_6 {
+    background-image: url(images/fondsection06.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+    background-position: bottom;
+    margin-top: 30px;
+    text-align: center;
+}
+/* section 6 element central */
+#nivo_6-group {
+    display: grid;
+    grid-template-columns: 160px 677px;
+    grid-template-rows: 138px 31px 26px;
+    margin: 95px 511px 0 512px;
+    padding-bottom: 195px;
+    text-align: left;
+
+}
+#nivo_6-img {
+    grid-column: 1;
+    grid-row: 1;
+}
+#nivo_6-tt1 {
+    grid-column:2;
+    grid-row: 1;
+    font-style: italic;
+    font-size: 21px;
+    line-height: 36px;
+}
+#nivo_6-tt2 {
+    grid-column: 2;
+    grid-row: 2;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+}
+#nivo_6-tt3 {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.5008px;
+}
+#nivo_6-group::before {
+    grid-column: 1;
+    grid-row: 1;
+    content:url(images/guillemet.svg);
+    display: block;
+    position: relative;
+    height: 51px;
+    width: 51px;
+    top: -5px;
+    left: -5px;
+    
+}
+/* section 7 actualités header */
+#nivo_7 {
+    background-image: url(images/fondsection07.svg);
+    background-repeat: no-repeat;
+    background-position-y: 75px;
+    background-position-x: 10px;
+    display: flex;
+}
+/* section 7 bloc */
+
+#nivo_7-bloc {
+    display: grid;
+    grid-template-columns: 550px;
+    grid-template-rows: 27px 40px 80px 27px 40px 80px 27px 40px 80px;
+    margin: 200px 0px 0px 100px ;
+
+}
+/* placement titre Actualités */
+
+#nivo_7-h1{
+    margin: 180px 0px 430px 400px ;
+}
+/* section 7 placements grid */
+
+#nivo_7-tt1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+#nivo_7-tt2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+#nivo_7-tt3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+#nivo_7-tt4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+#nivo_7-tt5 {
+    grid-column: 1;
+    grid-row: 5;
+}
+#nivo_7-tt6 {
+    grid-column: 1;
+    grid-row: 6;
+    
+}
+#nivo_7-tt7 {
+    grid-column: 1;
+    grid-row: 7;
+}
+#nivo_7-tt8 {
+    grid-column: 1;
+    grid-row: 8;
+}
+#nivo_7-tt9 {
+    grid-column: 1;
+    grid-row: 9;
+}
+
+
+.nivo_7-t1 {
+    font-family: 'Roboto-Regular',sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#F87F28;
+}
+.nivo_7-t2 {
+    font-weight: 700;
+    font-size:18px;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+/* niveau 8 formulaire de contact */
+#nivo_8 {
+    background-image: url(images/fondsection08.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    
+}
+#nivo_8-header {
+    padding-top: 290px;
+    margin: 0px 250px 160px 480px;
+}
+#nivo_8-bloc1 {
+    display: grid;
+    grid-template-columns: 66px 350px;
+    grid-template-rows: 30px 32px 89px 30px 85px 30px 85px;
+}
+/* placement niveau 8 elements grid */
+#nivo_8-icon1 {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+#nivo_8-tt1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+#nivo_8-tt2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+#nivo_8-tt3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+#nivo_8-icon2 {
+    grid-column: 1;
+    grid-row: 4/6;
+}
+#nivo_8-tt4 {
+    grid-column: 2;
+    grid-row: 4;
+}
+#nivo_8-tt5 {
+    grid-column: 2;
+    grid-row: 5;
+}
+#nivo_8-icon3 {
+    grid-column: 1;
+    grid-row: 6/8;
+}
+#nivo_8-tt6 {
+    grid-column: 2;
+    grid-row: 6;
+}
+#nivo_8-tt7 {
+    grid-column: 2;
+    grid-row: 7;
+}
+/* mise en forme texte */
+
+#nivo_8-bloc2{
+    margin-top: 240px;
+    
+    margin-right: 100px;
+}
+
+.nivo_8-t1 {
+    font-weight: 500;
+    letter-spacing: 0.16px;
+    color: #F87F28;
+    text-transform: capitalize;
+}
+.nivo_8-t2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+
+}
+#nivo_8-tt8{
+    font-family: 'Roboto-Regular',sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+}
+#nivo_8-tt9{
+    margin:0;
+
+}
+#nivo_8-tt10{
+    margin-bottom: 12px;
+}
+ #nivo_8-tt11 {
+    Width:522px;
+    Height:72px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+/* pour case sans background */
+input {
+    background: none;
+}
+textarea {
+    background: none;
+    resize: none;
+    padding-top: 10px;
+}
+.button1{
+    margin-top: 28px;
+}
+#nivo_8-cadre1, #nivo_8-cadre2 {
+    position: relative;
+  
+}
+#nivo_8-label1,#nivo_8-label2,#nivo_8-label3{
+    position: absolute;
+    background-color:#232323;
+    padding: 0 10px;
+}
+#nivo_8-input1{
+    margin:40px 29px 26px 0px;
+}
+#nivo_8-input1, #nivo_8-input2, #nivo_8-input3{
+    border-radius: 4px;
+    border: 1px solid  #828282;
+}
+#nivo_8-label1 {
+    top: 27px;
+    left: 12px;
+}
+#nivo_8-label2 {
+    top: 27px;
+    left: 295px;
+}
+#nivo_8-label3 {
+    top: -12px;
+    left: 12px;
+}
 
