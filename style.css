@@ -965,6 +965,7 @@ textarea {
 #nivo_8-input1, #nivo_8-input2, #nivo_8-input3{
     border-radius: 4px;
     border: 1px solid  #828282;
+    color: #fff;
 }
 #nivo_8-label1 {
     top: 27px;
