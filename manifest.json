@@ -2,7 +2,7 @@
      "name": "Olivier Depiesse",
      "short_name": "Olivier",
      "description": "site de Olivier Depiesse",
-     "start_url": "/index.html",
+     "start_url": "/",
      "display": "standalone",
      "background_color": "#202020",
      "theme_color": "#202020",
